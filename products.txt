@@ -4,3 +4,5 @@
 snstac/pytak
 snstac/lincot
 snstac/cockpit-lincot
+snstac/cockpit-gps
+snstac/cockpit-aiscatcher
