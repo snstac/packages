@@ -3,9 +3,7 @@
 # ignored.
 snstac/adsbcot
 snstac/adsbxcot
-snstac/adsbxfeed
 snstac/aircot
-snstac/AIS-catcher
 snstac/aiscot
 snstac/aprscot
 snstac/asyncinotify
