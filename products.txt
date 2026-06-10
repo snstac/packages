@@ -1,8 +1,33 @@
 # GitHub repos (one per line) whose latest release .deb/.rpm assets are
 # published into the apt and yum repositories. Lines starting with # are
 # ignored.
-snstac/pytak
-snstac/lincot
-snstac/cockpit-lincot
-snstac/cockpit-gps
+snstac/adsbcot
+snstac/adsbxcot
+snstac/adsbxfeed
+snstac/aircot
+snstac/AIS-catcher
+snstac/aiscot
+snstac/aprscot
+snstac/asyncinotify
+snstac/charontak
+snstac/cockpit-adsbcot
 snstac/cockpit-aiscatcher
+snstac/cockpit-aiscot
+snstac/cockpit-dronecot
+snstac/cockpit-gps
+snstac/cockpit-lincot
+snstac/cotproxy
+snstac/dhbridge
+snstac/djicot
+snstac/dmrcot
+snstac/dronecot
+snstac/dump978
+snstac/inrcot
+snstac/lincot
+snstac/pulsecot
+snstac/pytak
+snstac/readsb
+snstac/realtek-8821cu-dkms
+snstac/stratuxcot
+snstac/takline
+snstac/takproto
