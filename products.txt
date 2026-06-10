@@ -17,9 +17,7 @@ snstac/cockpit-dronecot
 snstac/cockpit-gps
 snstac/cockpit-lincot
 snstac/cotproxy
-snstac/dhbridge
 snstac/djicot
-snstac/dmrcot
 snstac/dronecot
 snstac/dump978
 snstac/inrcot
@@ -29,5 +27,4 @@ snstac/pytak
 snstac/readsb
 snstac/realtek-8821cu-dkms
 snstac/stratuxcot
-snstac/takline
 snstac/takproto
