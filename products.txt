@@ -26,5 +26,4 @@ snstac/pulsecot
 snstac/pytak
 snstac/readsb
 snstac/realtek-8821cu-dkms
-snstac/takline
 snstac/takproto
