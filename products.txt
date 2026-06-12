@@ -11,8 +11,11 @@ snstac/charontak
 snstac/cockpit-adsbcot
 snstac/cockpit-aiscatcher
 snstac/cockpit-aiscot
+snstac/cockpit-aryaos
+snstac/cockpit-charontak
 snstac/cockpit-dronecot
 snstac/cockpit-gps
+snstac/cockpit-gpstak
 snstac/cockpit-lincot
 snstac/cotproxy
 snstac/dhbridge
