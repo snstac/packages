@@ -22,6 +22,7 @@ snstac/dhbridge
 snstac/djicot
 snstac/dronecot
 snstac/dump978
+snstac/gpstak
 snstac/inrcot
 snstac/kraktak
 snstac/lincot
