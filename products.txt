@@ -18,13 +18,11 @@ snstac/cockpit-gps
 snstac/cockpit-gpstak
 snstac/cockpit-lincot
 snstac/cotproxy
-snstac/dhbridge
 snstac/djicot
 snstac/dronecot
 snstac/dump978
 snstac/gpstak
 snstac/inrcot
-snstac/kraktak
 snstac/lincot
 snstac/pulsecot
 snstac/pytak
