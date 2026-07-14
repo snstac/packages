@@ -17,7 +17,6 @@ snstac/cockpit-dronecot
 snstac/cockpit-gps
 snstac/cockpit-gpstak
 snstac/cockpit-lincot
-snstac/cotproxy
 snstac/djicot
 snstac/dronecot
 snstac/dump978
