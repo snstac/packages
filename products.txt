@@ -1,9 +1,9 @@
 # GitHub repos (one per line) whose latest release .deb/.rpm assets are
 # published into the apt and yum repositories. Lines starting with # are
 # ignored.
-snstac/AIS-catcher
 snstac/adsbcot
 snstac/aircot
+snstac/AIS-catcher
 snstac/aiscot
 snstac/aprscot
 snstac/asyncinotify
@@ -20,6 +20,7 @@ snstac/cockpit-lincot
 snstac/djicot
 snstac/dronecot
 snstac/dump978
+snstac/gdltak
 snstac/gpstak
 snstac/inrcot
 snstac/lincot
