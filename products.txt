@@ -29,6 +29,7 @@ snstac/lincot
 snstac/pulsecot
 snstac/pytak
 snstac/python3-pymavlink
+snstac/sapientcot
 snstac/readsb
 snstac/realtek-8821cu-dkms
 snstac/sikw00fcot
