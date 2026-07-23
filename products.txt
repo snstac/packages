@@ -18,6 +18,7 @@ snstac/cockpit-dronecot
 snstac/cockpit-gps
 snstac/cockpit-gpstak
 snstac/cockpit-lincot
+snstac/cockpit-sapientcot
 snstac/cockpit-spyserver
 snstac/djicot
 snstac/dronecot
