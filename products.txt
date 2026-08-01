@@ -2,6 +2,7 @@
 # published into the apt and yum repositories. Lines starting with # are
 # ignored.
 snstac/acarsdec
+snstac/acarscot
 snstac/adsbcot
 snstac/aircot
 snstac/AIS-catcher
