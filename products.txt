@@ -27,6 +27,7 @@ snstac/dump978
 snstac/gdltak
 snstac/gpstak
 snstac/inrcot
+snstac/libacars
 snstac/lincot
 snstac/pulsecot
 snstac/pytak
