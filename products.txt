@@ -27,6 +27,7 @@ snstac/dronecot
 snstac/dump978
 snstac/gdlcot
 snstac/gpscot
+snstac/gutcheck
 snstac/inrcot
 snstac/libacars
 snstac/lincot
