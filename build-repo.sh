@@ -32,6 +32,26 @@ rm -f work/*latest* work/*.src.rpm
 ls -l work/
 
 #
+# ATAK vessel iconset (pinned) — hosted for cockpit-aiscot's public download
+#
+# cockpit-aiscot points ATAK phones at a *public* URL for the AIS-catcher
+# ship-class iconset. That zip lives in the (now private) aiscot source tree,
+# not as a release asset, so fetch it from the pinned release tag and host it
+# on this static site. Pinned to the release that first shipped it (v7.3.0);
+# it must NOT follow a moving branch. If aiscot changes the iconset and
+# cockpit-aiscot bumps ICONSET_VERSION, update ICONSET_VERSION here too and
+# re-publish (this build already authenticates with GH_TOKEN).
+ICONSET_VERSION="v7.3.0"
+ICONSET_REPO="snstac/aiscot"
+ICONSET_PATH="src/aiscot/data/ais-ships-iconset.zip"
+mkdir -p site/iconset
+curl -fsSL -H "Authorization: token ${GH_TOKEN}" \
+    "https://raw.githubusercontent.com/${ICONSET_REPO}/${ICONSET_VERSION}/${ICONSET_PATH}" \
+    -o "site/iconset/ais-ships-iconset-${ICONSET_VERSION}.zip"
+echo "  iconset: site/iconset/ais-ships-iconset-${ICONSET_VERSION}.zip"
+echo "    sha256: $(sha256sum "site/iconset/ais-ships-iconset-${ICONSET_VERSION}.zip" | awk '{print $1}')"
+
+#
 # apt repository (reprepro)
 #
 echo "==> Building apt repository"
