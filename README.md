@@ -26,6 +26,27 @@ sudo dnf install lincot cockpit-lincot
 
 Add its `owner/repo` to `products.txt`. Its latest release must carry versioned `.deb` and/or `.rpm` assets (stable `*latest*` aliases and `.src.rpm` files are ignored). New releases are picked up by the daily run, or immediately via **Actions → publish → Run workflow**.
 
+## Repository secret: `PACKAGES_READ_TOKEN`
+
+The publish workflow downloads each product's latest release assets with
+`gh release download`. Since most product repos are **private**, the default
+`github.token` (scoped to this repo only) can no longer read their releases.
+Set the repo secret **`PACKAGES_READ_TOKEN`** to a **fine-grained personal
+access token** configured as follows:
+
+| Field | Value |
+|---|---|
+| Token type | Fine-grained PAT (Settings → Personal access tokens → Tokens → Fine-grained tokens) |
+| Repository access | **Only select repositories** — every `owner/repo` in [`products.txt`](products.txt) (38 repos; 31 now private, 7 still public) |
+| Expiration | Per org policy (recommend 90 days; renew before expiry) |
+| Permissions | **Contents: Read-only** on each selected repo (Metadata: Read-only is always granted) |
+
+`Contents: Read-only` covers reading release metadata and downloading
+release assets. The workflow injects it as `GH_TOKEN`; `build-repo.sh` fails
+fast with a clear error if the secret is missing. When a repo is added to
+`products.txt`, grant the token `Contents: read` on it (or reissue it) or the
+daily build will 403 on that repo.
+
 ## Signing key
 
 Packages, apt `Release`, and yum `repomd.xml` are signed with the snstac packaging key (RSA-4096, `oss@snstac.com`). The private key exists only in this repo's `GPG_PRIVATE_KEY` Actions secret and in offline backup. Public key: [`snstac.asc`](https://snstac.github.io/packages/snstac.asc).

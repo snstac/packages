@@ -35,7 +35,11 @@ jobs:
 
       - name: Build apt + yum repositories
         env:
-          GH_TOKEN: ${{ github.token }}
+          # Fine-grained PAT (Contents: read) granted on every snstac org repo
+          # listed in products.txt, stored as the PACKAGES_READ_TOKEN repo secret.
+          # github.token is scoped to this repo only and cannot `gh release download`
+          # from the now-private sibling product repos. See README "Repository secret".
+          GH_TOKEN: ${{ secrets.PACKAGES_READ_TOKEN }}
         run: ./build-repo.sh
 
       - uses: actions/upload-pages-artifact@v3
