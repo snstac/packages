@@ -11,6 +11,11 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 : "${KEYID:?set KEYID to the GPG signing key id}"
+# gh release download needs a token that can read every repo in products.txt.
+# github.token (the default Actions token) is scoped to this repo only and will
+# 403 on the private sibling product repos, so use the PACKAGES_READ_TOKEN
+# fine-grained PAT (Contents: read) via GH_TOKEN.
+: "${GH_TOKEN:?GH_TOKEN not set; set the PACKAGES_READ_TOKEN repo secret (fine-grained PAT, Contents: read on all product repos)}"
 BASE_URL="${BASE_URL:-https://snstac.github.io/packages}"
 
 rm -rf work site
