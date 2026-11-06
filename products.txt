@@ -37,5 +37,6 @@ snstac/python3-pymavlink
 snstac/sapientcot
 snstac/readsb
 snstac/realtek-8821cu-dkms
+snstac/sdrmm
 snstac/sikw00fcot
 snstac/takproto
